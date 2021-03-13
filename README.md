@@ -1,5 +1,5 @@
 <h1 align="center">postcss-capsize</h1>
-<p align="center">PostCSS plugin to inject capsize font metrics</p>
+<p align="center">PostCSS plugin to inject Capsize font metrics</p>
 
 <p align="center">
 <a href="https://npmjs.com/package/postcss-capsize">
@@ -25,7 +25,9 @@
 </a>
 </p>
 
-> PostCSS plugin to inject capsize font metrics
+> PostCSS plugin to inject Capsize font metrics
+
+[**Read more about Capsize**](https://seek-oss.github.io/capsize/)
 
 ## Quick Start
 
@@ -52,6 +54,7 @@ module.exports = {
 +         lineGap: 0,
 +         unitsPerEm: 1000,
 +       }
++       // You can declare as many fonts as needed
 +     }
 +   }],
     require('autoprefixer')
@@ -64,7 +67,8 @@ module.exports = {
 ```css
 .test {
   /* font-metrics: [font-size] [font-family] [line-gap] */
-  font-metrics: 24px Test Mono 10px; 
+  /* [font-family] must match the entry in your plugin config */
+  font-metrics: 24px Test Mono 10px;
 }
 ```
 
