@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`plugin renders correct CSS 1`] = `
+"
+      .test {
+        padding: 0.05px 0;
+        line-height: 12.4px;
+        font-size: 24px;
+        font-family: Test Mono; 
+      }
+.test::after {
+        content: '';
+        margin-bottom: 0.0396em;
+        display: block;
+        height: 0; 
+}
+.test::before {
+        content: '';
+        margin-top: -0.4604em;
+        display: block;
+        height: 0; 
+}"
+`;
