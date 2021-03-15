@@ -3176,12 +3176,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"capsize@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "capsize@npm:1.1.0"
-  dependencies:
-    round-to: ^4.1.0
-  checksum: a66d7b062ad3233353723fef8dada3524fbcc7c7e45bb080d72f909a899b1c889a47adbff02d70a1102ecd0177daa1b24b6d4610c125fb5734bad9ed3a6c0fb6
+"capsize@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "capsize@npm:2.0.0"
+  checksum: c0c247c3112533e45396ed8efde12aba17adee047485bae0c4fc99eed5e8c13fad85729d4c22bd5734dca0c1d00c8fec3296891cf2f4eb4790cf9e595a821054
   languageName: node
   linkType: hard
 
@@ -8169,7 +8167,7 @@ __metadata:
     "@types/jest": ^26.0.20
     "@typescript-eslint/eslint-plugin": ^4.18.0
     "@typescript-eslint/parser": ^4.18.0
-    capsize: ^1.1.0
+    capsize: ^2.0.0
     codecov: ^3.8.1
     conventional-changelog-conventionalcommits: ^4.5.0
     esbuild: 0.9.2
@@ -8920,13 +8918,6 @@ __metadata:
   bin:
     rollup: dist/bin/rollup
   checksum: a59bb8238caffe3c1dea656dee36855c305c9ccb6d65d847598846ec8f5c1c12181661515deb072d4f15f3e4c4e02678b2a01e62e2104775bbc043242c1b2d63
-  languageName: node
-  linkType: hard
-
-"round-to@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "round-to@npm:4.1.0"
-  checksum: d2afd835339d8a1f49855583bae956844d3eaa26233bb54bd0f2c6ddcf466c69b76bef7d3f503625363920693ecfed2620515f892806c6b37fdb2a7457b034a6
   languageName: node
   linkType: hard
 
