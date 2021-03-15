@@ -101,7 +101,6 @@ const plugin: PluginCreator<PluginOptions> = ctx => {
           fontFamily,
           fontSize: values.fontSize,
           lineHeight: values.lineHeight,
-          padding: values.padding,
         })
 
         declareOnParent({
