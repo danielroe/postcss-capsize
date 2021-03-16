@@ -18,3 +18,22 @@ exports[`plugin renders correct CSS 1`] = `
         display: table; 
 }"
 `;
+
+exports[`plugin renders correct CSS with line-gap syntax 1`] = `
+"
+      .test {
+        font-family: 'Gaudy Mono', 'Test Mono', sans-serif;
+        font-size: 24px;
+        line-height: 12.4px;
+      }
+.test::after {
+        content: '';
+        margin-top: 0.0417em;
+        display: table;
+}
+.test::before {
+        content: '';
+        margin-bottom: -0.4583em;
+        display: table;
+}"
+`;

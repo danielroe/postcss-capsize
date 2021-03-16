@@ -64,6 +64,18 @@ module.exports = {
 
 ## Example
 
+### Split syntax
+```css
+.test {
+  line-gap: 10px;
+  /* both properties below must be declared alongside `line-gap` */
+  /* The first matching font-family from your plugin config will be used */
+  font-family: 'Gaudy Mono', 'Test Mono', sans-serif;
+  font-size: 24px;
+}
+```
+
+### Combined syntax (deprecated)
 ```css
 .test {
   /* font-metrics: [font-size] [font-family] [line-gap] */
@@ -76,6 +88,8 @@ module.exports = {
 .test {
   line-height: 12.4px;
   font-size: 24px;
+  font-family: 'Gaudy Mono', 'Test Mono', sans-serif;
+  /* Or, with combined syntax */
   font-family: Test Mono; 
 }
 .test::before {

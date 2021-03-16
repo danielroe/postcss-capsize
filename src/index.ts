@@ -58,6 +58,12 @@ function useParentDeclare(
   return declareAllOnParent
 }
 
+type FontConfig = {
+  size: string
+  fontFamily: string
+  gap: string
+}
+
 const plugin: PluginCreator<PluginOptions> = ctx => {
   /* istanbul ignore next */
   const { metrics = {} } = ctx || {}
@@ -70,45 +76,76 @@ const plugin: PluginCreator<PluginOptions> = ctx => {
       ')) (?<gap>\\d+)px$'
   )
 
+  function addCapsizedRules(
+    fontConfig: FontConfig,
+    source: Declaration,
+    helpers: Helpers
+  ) {
+    const { size, fontFamily, gap } = fontConfig
+    const { Declaration, Rule } = helpers
+
+    const declare = useDeclare(source, Declaration)
+    const declareOnParent = useParentDeclare(
+      source.parent as Rule,
+      Declaration,
+      Rule
+    )
+
+    const values = capsize({
+      fontMetrics: metrics[fontFamily],
+      fontSize: Number(size),
+      lineGap: Number(gap),
+    })
+
+    declare({
+      lineHeight: values.lineHeight,
+    })
+
+    declareOnParent({
+      '::before': values['::before'],
+      '::after': values['::after'],
+    })
+
+    source.remove()
+  }
+
   return {
     postcssPlugin: 'postcss-capsize',
 
     Declaration: {
-      'font-metrics'(declaration, { Declaration, Rule }) {
-        const { size, family: fontFamily, gap } =
-          declaration.value.match(matcher)?.groups || {}
+      'font-metrics': (declaration, helpers) => {
+        const { size, family: fontFamily, gap } = declaration.value.match(matcher)?.groups || {}
 
         if (!size || !fontFamily || !gap) {
-          throw new Error(
-            'Correct syntax is `font-metrics: 24px serif 4px;`, or [font-size] [font-family] [line-gap]'
-          )
+          throw new Error('Correct syntax is `font-metrics: [font-size]px [font-family] [line-gap]px;')
         }
 
-        const declare = useDeclare(declaration, Declaration)
-        const declareOnParent = useParentDeclare(
-          declaration.parent as Rule,
-          Declaration,
-          Rule
-        )
-
-        const values = capsize({
-          fontMetrics: metrics[fontFamily],
-          fontSize: Number(size),
-          lineGap: Number(gap),
-        })
-
+        const declare = useDeclare(declaration, helpers.Declaration)
+        
         declare({
           fontFamily,
-          fontSize: values.fontSize,
-          lineHeight: values.lineHeight,
+          fontSize: `${size}px`,
         })
 
-        declareOnParent({
-          '::before': values['::before'],
-          '::after': values['::after'],
+        addCapsizedRules({ size, fontFamily, gap }, declaration, helpers)
+      },
+      'line-gap': (declaration, helpers) => {
+        let fontFamily!: string
+        let size!: string
+        const gap = (declaration.value.match(/^(\d+)px$/) || [])[1]
+
+        declaration.parent?.walkDecls('font-family', d => {
+          fontFamily = d.value
+            .split(',')
+            .map(val => val.trim().replace(/['"]/g, ''))
+            .find(val => fontFamilies.includes(val))!
         })
 
-        declaration.remove()
+        declaration.parent?.walkDecls('font-size', d => {
+          size = (d.value.match(/^(\d+)px$/) || [])[1]
+        })
+
+        addCapsizedRules({ size, fontFamily, gap }, declaration, helpers)
       },
     },
   }

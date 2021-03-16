@@ -31,19 +31,37 @@ describe(`plugin`, () => {
     )
     expect(result.css).toMatchSnapshot()
   })
-  it('throws an error with invalid declaration', async () => {
-    let errored = false
-    try {
-      await processor.process(
-        `
+  it('renders correct CSS with line-gap syntax', async () => {
+    const result = await processor.process(
+      `
       .test {
-        font-metrics: Test Mono 10px; 
+        font-family: 'Gaudy Mono', 'Test Mono', sans-serif;
+        font-size: 24px;
+        line-gap: 10px;
       }`,
-        { from: undefined }
-      )
-    } catch {
-      errored = true
-    }
-    expect(errored).toBeTruthy()
+      { from: undefined }
+    )
+    expect(result.css).toMatchSnapshot()
+  })
+  it('throws an error with invalid declaration', async () => {
+    const invalidOptions = [
+      `.test { font-metrics: Test Mono 10px; }`,
+      `.test { line-gap: 10rem; }`,
+      `.test { line-gap: 10px; }`,
+      `.test { line-gap: 10px; font-size: 10vw; }`,
+      `.test { line-gap: 10px; font-size: 10px; }`,
+    ]
+    await Promise.all(invalidOptions.map(async (css) => {
+      let errored = false
+      try {
+        await processor.process(
+          css,
+          { from: undefined }
+        )
+      } catch {
+        errored = true
+      }
+      expect(errored).toBeTruthy()
+    }))
   })
 })
