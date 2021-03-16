@@ -1,3 +1,10 @@
+## [0.2.0](https://github.com/danielroe/postcss-capsize/compare/0.1.0...0.2.0) (2021-03-16)
+
+
+### Features
+
+* add new split-style `line-gap` syntax ([6370939](https://github.com/danielroe/postcss-capsize/commit/637093973722d9a43038dfb3c72e91bda69b6bce))
+
 ## [0.1.0](https://github.com/danielroe/postcss-capsize/compare/0.0.2...0.1.0) (2021-03-15)
 
 
