@@ -74,22 +74,19 @@ module.exports = {
 
 ```css
 .test {
-  padding: 0.05px 0;
   line-height: 12.4px;
   font-size: 24px;
   font-family: Test Mono; 
 }
 .test::before {
   content: '';
-  margin-top: -0.4604em;
-  display: block;
-  height: 0; 
+  margin-bottom: -0.4583em;
+  display: table; 
 }
 .test::after {
   content: '';
-  margin-bottom: 0.0396em;
-  display: block;
-  height: 0; 
+  margin-top: 0.0417em;
+  display: table; 
 }
 ```
 
