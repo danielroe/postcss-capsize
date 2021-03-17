@@ -51,17 +51,16 @@ describe(`plugin`, () => {
       `.test { line-gap: 10px; font-size: 10vw; }`,
       `.test { line-gap: 10px; font-size: 10px; }`,
     ]
-    await Promise.all(invalidOptions.map(async (css) => {
-      let errored = false
-      try {
-        await processor.process(
-          css,
-          { from: undefined }
-        )
-      } catch {
-        errored = true
-      }
-      expect(errored).toBeTruthy()
-    }))
+    await Promise.all(
+      invalidOptions.map(async css => {
+        let errored = false
+        try {
+          await processor.process(css, { from: undefined })
+        } catch {
+          errored = true
+        }
+        expect(errored).toBeTruthy()
+      })
+    )
   })
 })

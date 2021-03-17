@@ -114,14 +114,17 @@ const plugin: PluginCreator<PluginOptions> = ctx => {
 
     Declaration: {
       'font-metrics': (declaration, helpers) => {
-        const { size, family: fontFamily, gap } = declaration.value.match(matcher)?.groups || {}
+        const { size, family: fontFamily, gap } =
+          declaration.value.match(matcher)?.groups || {}
 
         if (!size || !fontFamily || !gap) {
-          throw new Error('Correct syntax is `font-metrics: [font-size]px [font-family] [line-gap]px;')
+          throw new Error(
+            'Correct syntax is `font-metrics: [font-size]px [font-family] [line-gap]px;'
+          )
         }
 
         const declare = useDeclare(declaration, helpers.Declaration)
-        
+
         declare({
           fontFamily,
           fontSize: `${size}px`,
