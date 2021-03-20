@@ -84,6 +84,8 @@ module.exports = {
 }
 ```
 
+### Result
+
 ```css
 .test {
   line-height: 12.4px;
