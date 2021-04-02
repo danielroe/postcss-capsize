@@ -4174,12 +4174,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:0.11.2":
-  version: 0.11.2
-  resolution: "esbuild@npm:0.11.2"
+"esbuild@npm:0.11.3":
+  version: 0.11.3
+  resolution: "esbuild@npm:0.11.3"
   bin:
     esbuild: bin/esbuild
-  checksum: 28e5d7d752b05f4712d3d154e586d8ee621af5507d95743e2728aa4c70a36c9a8abccf302bc58385a2d2344c76296eb6573513fb56e77f7e0c27a2d34eb14ec1
+  checksum: cc28d669f6230f5ea4d282cf0b57949cd45d45a49dc3cacc51239b5cfe67c80f0838ce6984784747c6c1957e84608714ca0008ae8ceea67d4d2fe1e7dc94b5a4
   languageName: node
   linkType: hard
 
@@ -8170,7 +8170,7 @@ __metadata:
     capsize: ^2.0.0
     codecov: ^3.8.1
     conventional-changelog-conventionalcommits: ^4.5.0
-    esbuild: 0.11.2
+    esbuild: 0.11.3
     eslint: ^7.23.0
     eslint-config-prettier: ^8.1.0
     eslint-plugin-jest: ^24.3.2
