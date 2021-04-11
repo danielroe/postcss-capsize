@@ -4158,7 +4158,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:0.11.7, esbuild@npm:^0.11.5":
+"esbuild@npm:0.11.8":
+  version: 0.11.8
+  resolution: "esbuild@npm:0.11.8"
+  bin:
+    esbuild: bin/esbuild
+  checksum: 2bf939680de1c59ff668a334b7aa76efc446d4c611beddb8f594de24f1b6261364de3e3440a4040f287013a0237f7c1046b556182d2fe3824fde921711188211
+  languageName: node
+  linkType: hard
+
+"esbuild@npm:^0.11.5":
   version: 0.11.7
   resolution: "esbuild@npm:0.11.7"
   bin:
@@ -8147,7 +8156,7 @@ __metadata:
     capsize: ^2.0.0
     codecov: ^3.8.1
     conventional-changelog-conventionalcommits: ^4.5.0
-    esbuild: 0.11.7
+    esbuild: 0.11.8
     eslint: ^7.24.0
     eslint-config-prettier: ^8.1.0
     eslint-plugin-jest: ^24.3.5
@@ -8157,9 +8166,9 @@ __metadata:
     jest: ^26.6.3
     lint-staged: ^10.5.4
     pinst: ^2.1.6
-    postcss: ^8.2.9
+    postcss: ^8.2.10
     prettier: ^2.2.1
-    release-it: ^14.6.0
+    release-it: ^14.6.1
     semver: ^7.3.5
     siroc: ^0.9.2
     typescript: ^4.2.4
@@ -8168,14 +8177,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"postcss@npm:^8.2.9":
-  version: 8.2.9
-  resolution: "postcss@npm:8.2.9"
+"postcss@npm:^8.2.10":
+  version: 8.2.10
+  resolution: "postcss@npm:8.2.10"
   dependencies:
     colorette: ^1.2.2
     nanoid: ^3.1.22
     source-map: ^0.6.1
-  checksum: b661a6e858c82e8919c9b1e6bc299b5b2ba61dc66ccc52ef631ddc8b69aabce170a6f0a9ea04f087e7be780ad34cfc15dbbf952c152a9698375de8c88b8c4e96
+  checksum: 83912f846376ceb501d887951bb3c7f5efc16452b124ba5ffbdd27f718dabd1edce8f6ef777a88aeb93366081cc2a3804581b2e6711a1e89ecaecb0dff2d2b73
   languageName: node
   linkType: hard
 
@@ -8598,9 +8607,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"release-it@npm:^14.6.0":
-  version: 14.6.0
-  resolution: "release-it@npm:14.6.0"
+"release-it@npm:^14.6.1":
+  version: 14.6.1
+  resolution: "release-it@npm:14.6.1"
   dependencies:
     "@iarna/toml": 2.2.5
     "@octokit/rest": 18.5.2
@@ -8632,7 +8641,7 @@ __metadata:
     yargs-parser: 20.2.7
   bin:
     release-it: bin/release-it.js
-  checksum: 75e553b8c410a9281b47a14936715e4b2a4eba50c2c3aadf0834f228073257d85b0800c4a75f3d8c94c8d29725fcdd53ed328e0fe3f316c1c0cf7b83cce19f3d
+  checksum: 88c8d50d590faa1d5f5a8494487bb2805509471b5a1228aef5f9ef5d53a1edb8784cbce33e1f9fcfe714a9f1fb38705b8f37933cfa6ca36b47234169b2d8e812
   languageName: node
   linkType: hard
 
