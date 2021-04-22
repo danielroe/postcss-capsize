@@ -8156,7 +8156,7 @@ __metadata:
     jest: ^26.6.3
     lint-staged: ^10.5.4
     pinst: ^2.1.6
-    postcss: ^8.2.10
+    postcss: ^8.2.12
     prettier: ^2.2.1
     release-it: ^14.6.1
     semver: ^7.3.5
@@ -8167,14 +8167,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"postcss@npm:^8.2.10":
-  version: 8.2.10
-  resolution: "postcss@npm:8.2.10"
+"postcss@npm:^8.2.12":
+  version: 8.2.12
+  resolution: "postcss@npm:8.2.12"
   dependencies:
     colorette: ^1.2.2
     nanoid: ^3.1.22
     source-map: ^0.6.1
-  checksum: 83912f846376ceb501d887951bb3c7f5efc16452b124ba5ffbdd27f718dabd1edce8f6ef777a88aeb93366081cc2a3804581b2e6711a1e89ecaecb0dff2d2b73
+  checksum: f16956a6cc20ae78390338362e0640fa25a88895ddc55bd5850536a3140897a538fe91b5d6dc9c84147a20ff100f6389b7445deb539159bea4df7e584f5a63ac
   languageName: node
   linkType: hard
 
