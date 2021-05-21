@@ -8225,7 +8225,7 @@ __metadata:
     jest: ^26.6.3
     lint-staged: ^11.0.0
     pinst: ^2.1.6
-    postcss: ^8.2.15
+    postcss: ^8.3.0
     prettier: ^2.3.0
     release-it: ^14.6.2
     semver: ^7.3.5
@@ -8236,14 +8236,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"postcss@npm:^8.2.15":
-  version: 8.2.15
-  resolution: "postcss@npm:8.2.15"
+"postcss@npm:^8.3.0":
+  version: 8.3.0
+  resolution: "postcss@npm:8.3.0"
   dependencies:
     colorette: ^1.2.2
     nanoid: ^3.1.23
-    source-map: ^0.6.1
-  checksum: 07c309e5318843cdbb240b19101c8c679e19cb88544811de921dd9125118d6c0603afe925da7f2ac928dd7d4c0c6380ccdedf032400af5013210a3f145baca5d
+    source-map-js: ^0.6.2
+  checksum: 7786df62a605e6fc9380c1ee1e5ed177fbcdb3f3427ac6096ee0dbd9d80bdb8627d2e528d38d6f0fe850bb5668d4d46923eaf65dfd146e9b51fe770bf140d0ef
   languageName: node
   linkType: hard
 
@@ -9326,6 +9326,13 @@ __metadata:
   bin:
     sort-package-json: cli.js
   checksum: c00834b2d496df86da86c54c5a51e25687318e74c177074f4e073a901d903780e821b8c2db44cf20ddc34e2482579e60b54e2325ee7d601c2f7ca73600d341cb
+  languageName: node
+  linkType: hard
+
+"source-map-js@npm:^0.6.2":
+  version: 0.6.2
+  resolution: "source-map-js@npm:0.6.2"
+  checksum: 9c8151a29e00fd8d3ba87709fdf9a9ce48313d653f4a29a39b4ae53d346ac79e005de624796ff42eff55cbaf26d2e87f4466001ca87831d400d818c5cf146a0e
   languageName: node
   linkType: hard
 
