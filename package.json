@@ -33,13 +33,13 @@
     "lint:all:prettier": "yarn lint:prettier \"**/*.{js,json,ts}\"",
     "lint:eslint": "eslint --fix",
     "lint:prettier": "prettier --write --loglevel warn",
-    "prepare": "husky install && yarn build",
-    "prepublishOnly": "pinst --disable && yarn lint && yarn test",
+    "prepare": "yarn husky install && yarn build",
+    "prepublishOnly": "yarn pinst --disable && yarn lint && yarn test",
     "release": "release-it",
     "test": "yarn test:unit",
     "test:unit": "jest",
-    "postinstall": "husky install",
-    "postpublish": "pinst --enable"
+    "postinstall": "yarn husky install",
+    "postpublish": "yarn pinst --enable"
   },
   "dependencies": {
     "@capsizecss/core": "^3.0.0"
