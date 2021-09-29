@@ -1,3 +1,10 @@
+## [0.3.0](https://github.com/danielroe/postcss-capsize/compare/0.2.0...0.3.0) (2021-09-29)
+
+
+### Features
+
+* upgrade to `@capsizecss/core` v3 ([#53](https://github.com/danielroe/postcss-capsize/issues/53)) ([b59229a](https://github.com/danielroe/postcss-capsize/commit/b59229af57c2536f9dc596d799710c5bd3576b9d))
+
 ## [0.2.0](https://github.com/danielroe/postcss-capsize/compare/0.1.0...0.2.0) (2021-03-16)
 
 
