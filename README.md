@@ -62,6 +62,8 @@ module.exports = {
 }
 ```
 
+**Note**: there are many font metrics you can install from `@capsizecss/metrics` - or generate from a font file via `@capsizecss/unpack`.
+
 ## Example
 
 ### Split syntax
