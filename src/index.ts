@@ -1,4 +1,4 @@
-import capsize, { FontMetrics } from 'capsize'
+import { createStyleObject, FontMetrics } from '@capsizecss/core'
 import type { Declaration, Helpers, PluginCreator, Rule } from 'postcss'
 
 export interface PluginOptions {
@@ -91,7 +91,7 @@ const plugin: PluginCreator<PluginOptions> = ctx => {
       Rule
     )
 
-    const values = capsize({
+    const values = createStyleObject({
       fontMetrics: metrics[fontFamily],
       fontSize: Number(size),
       lineGap: Number(gap),
@@ -114,8 +114,11 @@ const plugin: PluginCreator<PluginOptions> = ctx => {
 
     Declaration: {
       'font-metrics': (declaration, helpers) => {
-        const { size, family: fontFamily, gap } =
-          declaration.value.match(matcher)?.groups || {}
+        const {
+          size,
+          family: fontFamily,
+          gap,
+        } = declaration.value.match(matcher)?.groups || {}
 
         if (!size || !fontFamily || !gap) {
           throw new Error(

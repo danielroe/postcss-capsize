@@ -1296,6 +1296,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@capsizecss/core@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@capsizecss/core@npm:3.0.0"
+  checksum: a3332919860573f24d14107bf070d4d9da304b5e22c461bbd3c0b14912a4c6cca6d9a3a6a02b2d8d19858eb709d1efa7eae8ff3c6d58440d40faa19b9b27debe
+  languageName: node
+  linkType: hard
+
 "@eslint/eslintrc@npm:^0.4.3":
   version: 0.4.3
   resolution: "@eslint/eslintrc@npm:0.4.3"
@@ -3030,13 +3037,6 @@ __metadata:
   version: 1.0.30001230
   resolution: "caniuse-lite@npm:1.0.30001230"
   checksum: 7ad6bf592c272dc62e59eb05b7e8581f6e8e0b0f6cef8e687c82c8306d77dccacdbba86286a4d1e3defebdd358ddc0a236208f08ea8e7b899d7b519c1223399a
-  languageName: node
-  linkType: hard
-
-"capsize@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "capsize@npm:2.0.0"
-  checksum: 11b490ec7c334feb034662a0593ed4c96de6518619dba63f30f21f53f631080472766c9c59fe2c79863a9dca313600539811cfa9f62c6d286454f10fbbe13725
   languageName: node
   linkType: hard
 
@@ -7680,13 +7680,13 @@ __metadata:
     "@babel/preset-env": ^7.15.6
     "@babel/preset-typescript": ^7.15.0
     "@babel/runtime": ^7.15.4
+    "@capsizecss/core": ^3.0.0
     "@jest/test-sequencer": ^27.2.4
     "@release-it/conventional-changelog": ^3.3.0
     "@siroc/eslint-config": ^0.2.0
     "@types/jest": ^27.0.2
     "@typescript-eslint/eslint-plugin": ^4.32.0
     "@typescript-eslint/parser": ^4.32.0
-    capsize: ^2.0.0
     codecov: ^3.8.3
     conventional-changelog-conventionalcommits: ^4.6.1
     esbuild: 0.13.3
