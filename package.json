@@ -42,7 +42,7 @@
     "postpublish": "pinst --enable"
   },
   "dependencies": {
-    "capsize": "^2.0.0"
+    "@capsizecss/core": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
