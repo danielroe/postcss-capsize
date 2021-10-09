@@ -59,7 +59,7 @@
     "codecov": "^3.8.3",
     "conventional-changelog-conventionalcommits": "^4.6.1",
     "esbuild": "0.13.3",
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest": "^24.5.0",
     "eslint-plugin-prettier": "^4.0.0",
