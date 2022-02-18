@@ -58,7 +58,7 @@
     "@typescript-eslint/parser": "^5.12.0",
     "codecov": "^3.8.3",
     "conventional-changelog-conventionalcommits": "^4.6.3",
-    "esbuild": "0.14.22",
+    "esbuild": "0.14.23",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest": "^26.1.1",
