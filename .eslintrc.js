@@ -1,4 +1,20 @@
 module.exports = {
+  env: {
+    browser: false,
+    es6: true,
+    node: true,
+  },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    sourceType: 'module',
+  },
+  plugins: ['@typescript-eslint'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+  ],
   rules: {
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/ban-types': 'off',
@@ -8,5 +24,4 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     'no-unused-vars': 'off',
   },
-  extends: ['@siroc'],
 }

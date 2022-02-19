@@ -65,7 +65,7 @@ type FontConfig = {
 }
 
 const plugin: PluginCreator<PluginOptions> = ctx => {
-  /* istanbul ignore next */
+  /* c8 ignore next */
   const { metrics = {} } = ctx || {}
 
   const fontFamilies = Object.keys(metrics)

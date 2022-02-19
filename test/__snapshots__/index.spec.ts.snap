@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`plugin renders correct CSS 1`] = `
+exports[`plugin > renders correct CSS 1`] = `
 "
       .test {
         line-height: 12.4px;
@@ -19,7 +19,7 @@ exports[`plugin renders correct CSS 1`] = `
 }"
 `;
 
-exports[`plugin renders correct CSS with line-gap syntax 1`] = `
+exports[`plugin > renders correct CSS with line-gap syntax 1`] = `
 "
       .test {
         font-family: 'Gaudy Mono', 'Test Mono', sans-serif;

@@ -1,6 +1,8 @@
 import postcss from 'postcss'
 import type Processor from 'postcss/lib/processor'
 
+import { describe, it, expect, beforeEach } from 'vitest'
+
 import pluginCreator from '../src'
 
 describe(`plugin`, () => {
