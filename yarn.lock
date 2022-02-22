@@ -4864,12 +4864,12 @@ fsevents@~2.3.2:
     pinst: ^3.0.0
     postcss: ^8.4.6
     prettier: ^2.5.1
-    release-it: ^14.12.4
+    release-it: ^14.12.5
     semver: ^7.3.5
     siroc: ^0.16.0
     typescript: ^4.5.5
     vite: ^2.8.4
-    vitest: ^0.5.1
+    vitest: ^0.5.3
   peerDependencies:
     postcss: ^8
   languageName: unknown
@@ -5195,9 +5195,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"release-it@npm:^14.12.4":
-  version: 14.12.4
-  resolution: "release-it@npm:14.12.4"
+"release-it@npm:^14.12.5":
+  version: 14.12.5
+  resolution: "release-it@npm:14.12.5"
   dependencies:
     "@iarna/toml": 2.2.5
     "@octokit/rest": 18.12.0
@@ -5229,7 +5229,7 @@ fsevents@~2.3.2:
     yargs-parser: 20.2.9
   bin:
     release-it: bin/release-it.js
-  checksum: 79b91a6059f5592827559150c920c92efa12e2ce91c4ca868795e62704fe70d2fade3fd855f5f6c66ad1f24789d3783536b84fb23907e752d87efa0938210806
+  checksum: cb3a08f242e1c0bd28c9607b3b30fea81d590674c815f9c04eafd7e3138ab6f043220ef52be5a79eb48c9321a5222718190c7c0d155ba726ec6f02a3cc13b726
   languageName: node
   linkType: hard
 
@@ -6493,9 +6493,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"vitest@npm:^0.5.1":
-  version: 0.5.1
-  resolution: "vitest@npm:0.5.1"
+"vitest@npm:^0.5.3":
+  version: 0.5.3
+  resolution: "vitest@npm:0.5.3"
   dependencies:
     "@types/chai": ^4.3.0
     "@types/chai-subset": ^1.3.3
@@ -6520,7 +6520,7 @@ fsevents@~2.3.2:
       optional: true
   bin:
     vitest: vitest.mjs
-  checksum: 62a621c2ea209ee81d00aa365610bd22069a071352b89d1b0a9b9165aefc171928e36835b13b9c69b3213c3687fb53de9abfe863ea8030e9531aa0556b4864d5
+  checksum: c4fe27cc42b474a712324141f34c0b5859f34274ec320bc7891dfcacbc9149c1d7d5e6bd1983a558270b8049ea21a0c3250849bc0b553b32f92f31b14c93e575
   languageName: node
   linkType: hard
 
