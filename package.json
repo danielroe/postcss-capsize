@@ -51,22 +51,22 @@
     "c8": "^7.11.0",
     "codecov": "^3.8.3",
     "conventional-changelog-conventionalcommits": "^4.6.3",
-    "esbuild": "0.14.26",
+    "esbuild": "0.14.27",
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "expect-type": "^0.13.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.5",
+    "lint-staged": "^12.3.7",
     "pinst": "^3.0.0",
-    "postcss": "^8.4.8",
-    "prettier": "^2.5.1",
-    "release-it": "^14.12.5",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.0",
+    "release-it": "^14.13.1",
     "semver": "^7.3.5",
     "siroc": "^0.16.0",
     "typescript": "^4.6.2",
     "vite": "^2.8.6",
-    "vitest": "^0.6.1"
+    "vitest": "^0.7.7"
   },
   "peerDependencies": {
     "postcss": "^8"
