@@ -9,15 +9,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v2-beta
+      - uses: actions/setup-node@v3
         with:
-          node-version: "14"
+          node-version: "16"
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         id: cache
         with:
           path: |
@@ -44,11 +44,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         id: cache
         with:
           path: |
@@ -64,7 +68,6 @@ jobs:
             ${{ runner.os }}-yarn
 
       - name: Install dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
         run: yarn
 
       - name: Build project
