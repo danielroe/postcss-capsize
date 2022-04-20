@@ -17,59 +17,58 @@
     "url": "https://github.com/danielroe"
   },
   "sideEffects": false,
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
-    "lib/**/*",
-    "lib/index.d.ts",
+    "dist/**/*",
+    "dist/index.d.ts",
     "!**/*.map"
   ],
   "scripts": {
-    "build": "yarn clean && yarn compile",
-    "clean": "rm -rf lib/*",
-    "compile": "siroc build",
-    "lint": "yarn lint:all:eslint && yarn lint:all:prettier",
-    "lint:all:eslint": "yarn lint:eslint --ext .js,.ts .",
-    "lint:all:prettier": "yarn lint:prettier \"**/*.{js,json,ts}\"",
+    "build": "unbuild",
+    "postinstall": "husky install",
+    "lint": "npm run lint:all:eslint && npm run lint:all:prettier",
+    "lint:all:eslint": "npm run lint:eslint -- --ext .js,.ts .",
+    "lint:all:prettier": "npm run lint:prettier -- \"**/*.{js,json,ts}\"",
     "lint:eslint": "eslint --fix",
     "lint:prettier": "prettier --write --loglevel warn",
-    "prepare": "yarn husky install && yarn build",
-    "prepublishOnly": "yarn pinst --disable && yarn lint && yarn test",
+    "prepare": "husky install && npm run build",
+    "prepublishOnly": "pinst --disable && npm run lint && npm run test",
+    "postpublish": "pinst --enable",
     "release": "release-it",
-    "test": "yarn test:unit",
-    "test:unit": "vitest",
-    "postinstall": "yarn husky install",
-    "postpublish": "yarn pinst --enable"
+    "test": "npm run test:unit",
+    "test:unit": "vitest"
   },
   "dependencies": {
     "@capsizecss/core": "^3.0.0"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^4.2.2",
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
-    "@typescript-eslint/parser": "^5.17.0",
-    "c8": "^7.11.0",
-    "codecov": "^3.8.3",
+    "@release-it/conventional-changelog": "^4.3.0",
+    "@rollup/pluginutils": "^4.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "c8": "^7.11.2",
     "conventional-changelog-conventionalcommits": "^4.6.3",
     "esbuild": "0.14.29",
-    "eslint": "^8.12.0",
+    "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "expect-type": "^0.13.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.7",
+    "lint-staged": "^12.4.0",
     "pinst": "^3.0.0",
     "postcss": "^8.4.12",
-    "prettier": "^2.6.1",
-    "release-it": "^14.13.1",
-    "semver": "^7.3.5",
-    "siroc": "^0.16.0",
+    "prettier": "^2.6.2",
+    "release-it": "^14.14.2",
+    "semver": "^7.3.7",
     "typescript": "^4.6.3",
-    "vite": "^2.8.6",
-    "vitest": "^0.8.0"
+    "unbuild": "^0.7.4",
+    "vite": "^2.9.5",
+    "vitest": "^0.8.5"
   },
   "peerDependencies": {
     "postcss": "^8"
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "pnpm@6.32.2"
 }
