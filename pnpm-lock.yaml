@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@capsizecss/core': ^3.0.0
-  '@release-it/conventional-changelog': ^4.3.0
+  '@release-it/conventional-changelog': ^5.0.0
   '@rollup/pluginutils': ^4.2.1
   '@typescript-eslint/eslint-plugin': ^5.22.0
   '@typescript-eslint/parser': ^5.22.0
@@ -29,7 +29,7 @@ dependencies:
   '@capsizecss/core': 3.0.0
 
 devDependencies:
-  '@release-it/conventional-changelog': 4.3.0_release-it@14.14.3
+  '@release-it/conventional-changelog': 5.0.0_release-it@14.14.3
   '@rollup/pluginutils': 4.2.1
   '@typescript-eslint/eslint-plugin': 5.22.0_9817cbad956b8aa5d1e3d9ec99e4a1e4
   '@typescript-eslint/parser': 5.22.0_eslint@8.15.0+typescript@4.6.4
@@ -453,11 +453,11 @@ packages:
       '@octokit/openapi-types': 11.2.0
     dev: true
 
-  /@release-it/conventional-changelog/4.3.0_release-it@14.14.3:
-    resolution: {integrity: sha512-SAdattAPXyxADh+cWbNqlk7OBWh/SskYCj0hAb5VPmm/wrIR1dQrlKpsUQ/7O0WGGe7uhvj4YB8kVTIZipcc9w==}
-    engines: {node: '>=10'}
+  /@release-it/conventional-changelog/5.0.0_release-it@14.14.3:
+    resolution: {integrity: sha512-YAvGgxA8cIQSbmyHmAmLMwzCkNP74upLST8jFuDJTI+AVfK2Grp2HbZu0/NeV3sHYD20sT8YMzNVUeRxNlyHeg==}
+    engines: {node: '>=14'}
     peerDependencies:
-      release-it: ^14.12.1
+      release-it: ^15.0.0-esm.4
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog: 3.1.25

@@ -44,7 +44,7 @@
     "@capsizecss/core": "^3.0.0"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^4.3.0",
+    "@release-it/conventional-changelog": "^5.0.0",
     "@rollup/pluginutils": "^4.2.1",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
