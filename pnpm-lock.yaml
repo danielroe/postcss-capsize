@@ -13,7 +13,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.0.0
   expect-type: ^0.13.0
-  husky: ^7.0.4
+  husky: ^8.0.0
   lint-staged: ^12.4.1
   pinst: ^3.0.0
   postcss: ^8.4.13
@@ -40,7 +40,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.15.0
   eslint-plugin-prettier: 4.0.0_440b30a60bbe5bb6e3ad0057150b2782
   expect-type: 0.13.0
-  husky: 7.0.4
+  husky: 8.0.0
   lint-staged: 12.4.1
   pinst: 3.0.0
   postcss: 8.4.13
@@ -2785,9 +2785,9 @@ packages:
     engines: {node: '>=10.17.0'}
     dev: true
 
-  /husky/7.0.4:
-    resolution: {integrity: sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==}
-    engines: {node: '>=12'}
+  /husky/8.0.0:
+    resolution: {integrity: sha512-4qbE/5dzNDNxFEkX9MNRPKl5+omTXQzdILCUWiqG/lWIAioiM5vln265/l6I2Zx8gpW8l1ukZwGQeCFbBZ6+6w==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
