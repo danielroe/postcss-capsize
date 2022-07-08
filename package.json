@@ -64,8 +64,8 @@
     "semver": "^7.3.7",
     "typescript": "^4.7.4",
     "unbuild": "^0.7.4",
-    "vite": "^2.9.13",
-    "vitest": "^0.17.0"
+    "vite": "^2.9.14",
+    "vitest": "^0.17.1"
   },
   "peerDependencies": {
     "postcss": "^8"
