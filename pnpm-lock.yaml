@@ -23,7 +23,7 @@ specifiers:
   typescript: ^4.7.4
   unbuild: ^0.7.6
   vite: ^3.0.4
-  vitest: ^0.19.1
+  vitest: ^0.20.1
 
 dependencies:
   '@capsizecss/core': 3.0.0
@@ -50,7 +50,7 @@ devDependencies:
   typescript: 4.7.4
   unbuild: 0.7.6
   vite: 3.0.4
-  vitest: 0.19.1_c8@7.12.0
+  vitest: 0.20.1_c8@7.12.0
 
 packages:
 
@@ -5056,8 +5056,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.19.1_c8@7.12.0:
-    resolution: {integrity: sha512-E/ZXpFMUahn731wzhMBNzWRp4mGgiZFT0xdHa32cbNO0CSaHpE9hTfteEU247Gi2Dula8uXo5vvrNB6dtszmQA==}
+  /vitest/0.20.1_c8@7.12.0:
+    resolution: {integrity: sha512-ZuP+PB7WkeUeyzAFAlWD2D8D7P07b9yAIFKYo71iHZeJl8ZQEvEtqAGQeTflUWVtUrrVydQHlRFAonRftZXRBg==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
