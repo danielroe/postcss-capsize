@@ -58,7 +58,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "pinst": "^3.0.0",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.15",
     "prettier": "^2.7.1",
     "release-it": "^15.2.0",
     "semver": "^7.3.7",
@@ -70,5 +70,5 @@
   "peerDependencies": {
     "postcss": "^8"
   },
-  "packageManager": "pnpm@7.8.0"
+  "packageManager": "pnpm@7.9.0"
 }
