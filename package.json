@@ -44,7 +44,7 @@
     "@capsizecss/core": "^3.0.0"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^5.0.0",
+    "@release-it/conventional-changelog": "^5.1.0",
     "@rollup/pluginutils": "^4.2.1",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
@@ -65,10 +65,10 @@
     "typescript": "^4.7.4",
     "unbuild": "^0.8.8",
     "vite": "^3.0.8",
-    "vitest": "^0.22.0"
+    "vitest": "^0.22.1"
   },
   "peerDependencies": {
     "postcss": "^8"
   },
-  "packageManager": "pnpm@7.9.0"
+  "packageManager": "pnpm@7.9.3"
 }
