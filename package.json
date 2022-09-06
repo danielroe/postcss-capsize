@@ -46,8 +46,8 @@
   "devDependencies": {
     "@release-it/conventional-changelog": "^5.1.0",
     "@rollup/pluginutils": "^4.2.1",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
     "c8": "^7.12.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "esbuild": "0.15.7",
@@ -64,11 +64,11 @@
     "semver": "^7.3.7",
     "typescript": "^4.8.2",
     "unbuild": "^0.8.10",
-    "vite": "^3.0.9",
-    "vitest": "^0.23.0"
+    "vite": "^3.1.0",
+    "vitest": "^0.23.1"
   },
   "peerDependencies": {
     "postcss": "^8"
   },
-  "packageManager": "pnpm@7.10.0"
+  "packageManager": "pnpm@7.11.0"
 }
