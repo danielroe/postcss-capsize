@@ -70,5 +70,5 @@
   "peerDependencies": {
     "postcss": "^8.4.21"
   },
-  "packageManager": "pnpm@7.32.0"
+  "packageManager": "pnpm@8.2.0"
 }
