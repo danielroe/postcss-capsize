@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@capsizecss/core':
-    specifier: ^3.1.1
-    version: 3.1.1
+    specifier: ^4.1.2
+    version: 4.1.2
 
 devDependencies:
   '@release-it/conventional-changelog':
@@ -315,8 +315,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@capsizecss/core@3.1.1:
-    resolution: {integrity: sha512-1YxfErFXdxcyDyc8peDwH2hiJF5U8sBY5i5HX0f/tpvabbu40w9r8VHYMOOw9Fox5O/+kf2gAhyfVe+sLnaaBA==}
+  /@capsizecss/core@4.1.2:
+    resolution: {integrity: sha512-5tMjLsVsaEEwJ816y3eTfhhTIyUWNFt58x6YcHni0eV5tta8MGDOAIe+CV5ICb5pguXgDpNGLprqhPqBWtkFSg==}
     dependencies:
       csstype: 3.1.1
     dev: false

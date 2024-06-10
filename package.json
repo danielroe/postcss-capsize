@@ -41,7 +41,7 @@
     "test:unit": "vitest"
   },
   "dependencies": {
-    "@capsizecss/core": "^3.1.1"
+    "@capsizecss/core": "^4.1.2"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^7.0.0",
