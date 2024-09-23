@@ -39,7 +39,7 @@ yarn add postcss-capsize --dev
 npm install postcss-capsize --save-dev
 ```
 
-Second, add `postcss-capsize` as a PostCSS plugin to your `postcss.config.js`, 
+Second, add `postcss-capsize` as a PostCSS plugin to your `postcss.config.js`,
 or in your project configuration.
 
 ```diff
@@ -94,17 +94,17 @@ module.exports = {
   font-size: 24px;
   font-family: 'Gaudy Mono', 'Test Mono', sans-serif;
   /* Or, with combined syntax */
-  font-family: Test Mono; 
+  font-family: Test Mono;
 }
 .test::before {
   content: '';
   margin-bottom: -0.4583em;
-  display: table; 
+  display: table;
 }
 .test::after {
   content: '';
   margin-top: 0.0417em;
-  display: table; 
+  display: table;
 }
 ```
 

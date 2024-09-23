@@ -1,7 +1,18 @@
 {
   "name": "postcss-capsize",
   "version": "0.3.0",
+  "packageManager": "pnpm@9.11.0",
   "description": "PostCSS plugin to inject capsize font metrics",
+  "author": {
+    "name": "Daniel Roe",
+    "email": "daniel@roe.dev",
+    "url": "https://github.com/danielroe"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielroe/postcss-capsize.git"
+  },
   "keywords": [
     "postcss",
     "css",
@@ -10,65 +21,55 @@
     "capsize",
     "metrics"
   ],
-  "repository": "danielroe/postcss-capsize",
-  "license": "MIT",
-  "author": {
-    "name": "Daniel Roe <daniel@roe.dev>",
-    "url": "https://github.com/danielroe"
-  },
   "sideEffects": false,
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
+    "!**/*.map",
     "dist/**/*",
-    "dist/index.d.ts",
-    "!**/*.map"
+    "dist/index.d.ts"
   ],
   "scripts": {
     "build": "unbuild",
-    "postinstall": "husky install",
-    "lint": "npm run lint:all:eslint && npm run lint:all:prettier",
-    "lint:all:eslint": "npm run lint:eslint -- --ext .js,.ts .",
-    "lint:all:prettier": "npm run lint:prettier -- \"**/*.{js,json,ts}\"",
+    "lint": "pnpm lint:all:eslint",
+    "lint:all:eslint": "pnpm lint:eslint -- .",
     "lint:eslint": "eslint --fix",
-    "lint:prettier": "prettier --write --loglevel warn",
-    "prepare": "husky install && npm run build",
-    "prepublishOnly": "pinst --disable && npm run lint && npm run test",
-    "postpublish": "pinst --enable",
-    "release": "release-it",
-    "test": "npm run test:unit",
+    "prepare": "simple-git-hooks && pnpm build",
+    "prepublishOnly": "pnpm lint && pnpm test",
+    "release": "bumpp && npm publish",
+    "test": "pnpm test:unit",
     "test:unit": "vitest"
   },
+  "peerDependencies": {
+    "postcss": "^8.4.47"
+  },
   "dependencies": {
-    "@capsizecss/core": "^3.1.1"
+    "@capsizecss/core": "^4.1.2"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^8.0.2",
+    "@antfu/eslint-config": "^3.7.1",
     "@rollup/pluginutils": "^5.1.1",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "c8": "^7.14.0",
-    "conventional-changelog-conventionalcommits": "^7.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "@vitest/coverage-v8": "^2.1.1",
     "esbuild": "0.24.0",
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint": "^9.11.0",
     "expect-type": "^0.20.0",
-    "husky": "^8.0.3",
     "lint-staged": "^15.2.10",
-    "pinst": "^3.0.0",
     "postcss": "^8.4.47",
-    "prettier": "^2.8.8",
-    "release-it": "^17.6.0",
-    "semver": "^7.6.3",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "^5.6.2",
     "unbuild": "^2.0.0",
     "vite": "^5.4.7",
     "vitest": "^2.1.1"
   },
-  "peerDependencies": {
-    "postcss": "^8.4.47"
+  "lintStaged": {
+    "*.{js,ts,json,md,yaml}": [
+      "yarn lint:eslint"
+    ]
   },
-  "packageManager": "pnpm@8.15.9"
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  }
 }

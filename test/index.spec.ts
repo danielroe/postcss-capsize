@@ -1,7 +1,7 @@
-import postcss from 'postcss'
 import type Processor from 'postcss/lib/processor'
+import postcss from 'postcss'
 
-import { describe, it, expect, beforeEach } from 'vitest'
+import { beforeEach, describe, expect, it } from 'vitest'
 
 import pluginCreator from '../src'
 
@@ -29,7 +29,7 @@ describe(`plugin`, () => {
       .test {
         font-metrics: 24px Test Mono 10px; 
       }`,
-      { from: undefined }
+      { from: undefined },
     )
     expect(result.css).toMatchSnapshot()
   })
@@ -41,7 +41,7 @@ describe(`plugin`, () => {
         font-size: 24px;
         line-gap: 10px;
       }`,
-      { from: undefined }
+      { from: undefined },
     )
     expect(result.css).toMatchSnapshot()
   })
@@ -54,15 +54,16 @@ describe(`plugin`, () => {
       `.test { line-gap: 10px; font-size: 10px; }`,
     ]
     await Promise.all(
-      invalidOptions.map(async css => {
+      invalidOptions.map(async (css) => {
         let errored = false
         try {
           await processor.process(css, { from: undefined })
-        } catch {
+        }
+        catch {
           errored = true
         }
         expect(errored).toBeTruthy()
-      })
+      }),
     )
   })
 })

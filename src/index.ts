@@ -1,5 +1,6 @@
-import { createStyleObject, FontMetrics } from '@capsizecss/core'
+import type { FontMetrics } from '@capsizecss/core'
 import type { Declaration, Helpers, PluginCreator, Rule } from 'postcss'
+import { createStyleObject } from '@capsizecss/core'
 
 export interface PluginOptions {
   metrics: Record<string, FontMetrics>
@@ -7,14 +8,14 @@ export interface PluginOptions {
 
 function useDeclare(
   declaration: Declaration,
-  Declaration: Helpers['Declaration']
+  Declaration: Helpers['Declaration'],
 ) {
   function declareOne([prop, value]: [prop: string, value: string]) {
     declaration.after(
       new Declaration({
-        prop: prop.replace(/[A-Z]/g, r => '-' + r.toLowerCase()),
+        prop: prop.replace(/[A-Z]/g, r => `-${r.toLowerCase()}`),
         value,
-      })
+      }),
     )
   }
 
@@ -28,11 +29,11 @@ function useDeclare(
 function useParentDeclare(
   parent: Rule,
   Declaration: Helpers['Declaration'],
-  Rule: Helpers['Rule']
+  Rule: Helpers['Rule'],
 ) {
   function declareOnParent([selector, props]: [
     selector: string,
-    props: Record<string, string | number>
+    props: Record<string, string | number>,
   ]) {
     parent.after(
       new Rule({
@@ -41,16 +42,16 @@ function useParentDeclare(
         nodes: Object.entries(props).map(
           ([prop, value]) =>
             new Declaration({
-              prop: prop.replace(/[A-Z]/g, r => '-' + r.toLowerCase()),
+              prop: prop.replace(/[A-Z]/g, r => `-${r.toLowerCase()}`),
               value: String(value),
-            })
+            }),
         ),
-      })
+      }),
     )
   }
 
   function declareAllOnParent(
-    props: Record<string, Record<string, string | number>>
+    props: Record<string, Record<string, string | number>>,
   ) {
     Object.entries(props).forEach(declareOnParent)
   }
@@ -58,28 +59,28 @@ function useParentDeclare(
   return declareAllOnParent
 }
 
-type FontConfig = {
+interface FontConfig {
   size: string
   fontFamily: string
   gap: string
 }
 
-const plugin: PluginCreator<PluginOptions> = ctx => {
+const plugin: PluginCreator<PluginOptions> = (ctx) => {
   /* c8 ignore next */
   const { metrics = {} } = ctx || {}
 
   const fontFamilies = Object.keys(metrics)
 
   const matcher = new RegExp(
-    '^(?<size>\\d+)px (?<family>(' +
-      fontFamilies.join('|') +
-      ')) (?<gap>\\d+)px$'
+    `^(?<size>\\d+)px (?<family>(${
+      fontFamilies.join('|')
+    })) (?<gap>\\d+)px$`,
   )
 
   function addCapsizedRules(
     fontConfig: FontConfig,
     source: Declaration,
-    helpers: Helpers
+    helpers: Helpers,
   ) {
     const { size, fontFamily, gap } = fontConfig
     const { Declaration, Rule } = helpers
@@ -88,7 +89,7 @@ const plugin: PluginCreator<PluginOptions> = ctx => {
     const declareOnParent = useParentDeclare(
       source.parent as Rule,
       Declaration,
-      Rule
+      Rule,
     )
 
     const values = createStyleObject({
@@ -122,7 +123,7 @@ const plugin: PluginCreator<PluginOptions> = ctx => {
 
         if (!size || !fontFamily || !gap) {
           throw new Error(
-            'Correct syntax is `font-metrics: [font-size]px [font-family] [line-gap]px;'
+            'Correct syntax is `font-metrics: [font-size]px [font-family] [line-gap]px;',
           )
         }
 
@@ -140,14 +141,14 @@ const plugin: PluginCreator<PluginOptions> = ctx => {
         let size!: string
         const gap = (declaration.value.match(/^(\d+)px$/) || [])[1]
 
-        declaration.parent?.walkDecls('font-family', d => {
+        declaration.parent?.walkDecls('font-family', (d) => {
           fontFamily = d.value
             .split(',')
             .map(val => val.trim().replace(/['"]/g, ''))
             .find(val => fontFamilies.includes(val))!
         })
 
-        declaration.parent?.walkDecls('font-size', d => {
+        declaration.parent?.walkDecls('font-size', (d) => {
           size = (d.value.match(/^(\d+)px$/) || [])[1]
         })
 
