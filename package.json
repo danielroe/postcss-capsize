@@ -51,7 +51,7 @@
     "c8": "^7.14.0",
     "conventional-changelog-conventionalcommits": "^7.0.2",
     "esbuild": "0.24.0",
-    "eslint": "^8.57.1",
+    "eslint": "^9.11.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "expect-type": "^0.20.0",
