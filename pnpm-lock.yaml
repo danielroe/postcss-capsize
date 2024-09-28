@@ -28,8 +28,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1(vitest@2.1.1)
       bumpp:
-        specifier: ^9.6.0
-        version: 9.6.0(magicast@0.3.5)
+        specifier: ^9.6.1
+        version: 9.6.1(magicast@0.3.5)
       esbuild:
         specifier: 0.24.0
         version: 0.24.0
@@ -1294,8 +1294,8 @@ packages:
     resolution: {integrity: sha512-zhaCDicdLuWN5UbN5IMnFqNMhNfo919sH85y2/ea+5Yg9TsTkeZxpL+JLbp6cgYFS4sRLp3YV4S6yDuqVWHYOw==}
     engines: {node: '>=6'}
 
-  bumpp@9.6.0:
-    resolution: {integrity: sha512-6excO/Xzlci8tu69J0ih6IhH/K70AF4lI0FvqqQ7BkZowDU/x9M/6+u5hXOHPP8oS44Fs/shs5cMXY5ORQ3ckg==}
+  bumpp@9.6.1:
+    resolution: {integrity: sha512-lQlPfyS0GrO5FaOODK+OHQxfCT+6/xWfd3Zt8dzsmzm69RWQfh5fAU9igmeZWOzK/s+4vL+gQLo3yw474ntBZw==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -4048,7 +4048,7 @@ snapshots:
 
   builtin-modules@3.3.0: {}
 
-  bumpp@9.6.0(magicast@0.3.5):
+  bumpp@9.6.1(magicast@0.3.5):
     dependencies:
       '@jsdevtools/ez-spawn': 3.0.4
       c12: 1.11.2(magicast@0.3.5)
