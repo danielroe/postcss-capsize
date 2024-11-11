@@ -42,7 +42,7 @@
     "test:unit": "vitest"
   },
   "peerDependencies": {
-    "postcss": "^8.4.48"
+    "postcss": "^8.4.49"
   },
   "dependencies": {
     "@capsizecss/core": "^4.1.2"
@@ -58,7 +58,7 @@
     "eslint": "^9.14.0",
     "expect-type": "^1.1.0",
     "lint-staged": "^15.2.10",
-    "postcss": "^8.4.48",
+    "postcss": "^8.4.49",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.6.3",
     "unbuild": "^2.0.0",
