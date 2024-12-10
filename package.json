@@ -57,7 +57,7 @@
     "esbuild": "0.24.0",
     "eslint": "^9.16.0",
     "expect-type": "^1.1.0",
-    "lint-staged": "^15.2.10",
+    "lint-staged": "^15.2.11",
     "postcss": "^8.4.49",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.7.2",
