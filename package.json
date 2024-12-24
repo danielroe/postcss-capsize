@@ -48,7 +48,7 @@
     "@capsizecss/core": "^4.1.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.12.0",
+    "@antfu/eslint-config": "^3.12.1",
     "@rollup/pluginutils": "^5.1.4",
     "@typescript-eslint/eslint-plugin": "^8.18.2",
     "@typescript-eslint/parser": "^8.18.2",
