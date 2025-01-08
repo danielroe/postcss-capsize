@@ -48,12 +48,12 @@
     "@capsizecss/core": "^4.1.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.12.1",
+    "@antfu/eslint-config": "^3.12.2",
     "@rollup/pluginutils": "^5.1.4",
     "@typescript-eslint/eslint-plugin": "^8.19.1",
     "@typescript-eslint/parser": "^8.19.1",
     "@vitest/coverage-v8": "^2.1.8",
-    "bumpp": "^9.9.2",
+    "bumpp": "^9.9.3",
     "esbuild": "0.24.2",
     "eslint": "^9.17.0",
     "expect-type": "^1.1.0",
