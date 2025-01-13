@@ -48,7 +48,7 @@
     "@capsizecss/core": "^4.1.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.13.0",
+    "@antfu/eslint-config": "^3.14.0",
     "@rollup/pluginutils": "^5.1.4",
     "@typescript-eslint/eslint-plugin": "^8.19.1",
     "@typescript-eslint/parser": "^8.19.1",
@@ -61,7 +61,7 @@
     "postcss": "^8.4.49",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.7.3",
-    "unbuild": "^3.2.0",
+    "unbuild": "^3.3.0",
     "vite": "^6.0.7",
     "vitest": "^2.1.8"
   },
