@@ -15,30 +15,15 @@ importers:
       '@antfu/eslint-config':
         specifier: ^4.1.1
         version: 4.1.1(@typescript-eslint/utils@8.23.0(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3))(@vue/compiler-sfc@3.5.8)(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3)(vitest@3.0.5(@types/debug@4.1.12)(jiti@2.4.2)(yaml@2.7.0))
-      '@rollup/pluginutils':
-        specifier: ^5.1.4
-        version: 5.1.4(rollup@4.30.1)
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^8.23.0
-        version: 8.23.0(@typescript-eslint/parser@8.23.0(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3))(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3)
-      '@typescript-eslint/parser':
-        specifier: ^8.23.0
-        version: 8.23.0(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3)
       '@vitest/coverage-v8':
         specifier: ^3.0.5
         version: 3.0.5(vitest@3.0.5(@types/debug@4.1.12)(jiti@2.4.2)(yaml@2.7.0))
       bumpp:
         specifier: ^10.0.2
         version: 10.0.2(magicast@0.3.5)
-      esbuild:
-        specifier: 0.24.2
-        version: 0.24.2
       eslint:
         specifier: ^9.19.0
         version: 9.19.0(jiti@2.4.2)
-      expect-type:
-        specifier: ^1.1.0
-        version: 1.1.0
       lint-staged:
         specifier: ^15.4.3
         version: 15.4.3
@@ -54,9 +39,6 @@ importers:
       unbuild:
         specifier: ^3.3.1
         version: 3.3.1(typescript@5.7.3)
-      vite:
-        specifier: ^6.1.0
-        version: 6.1.0(jiti@2.4.2)(yaml@2.7.0)
       vitest:
         specifier: ^3.0.5
         version: 3.0.5(@types/debug@4.1.12)(jiti@2.4.2)(yaml@2.7.0)
