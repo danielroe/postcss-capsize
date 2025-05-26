@@ -13,7 +13,7 @@ importers:
         version: 4.1.2
     devDependencies:
       '@antfu/eslint-config':
-        specifier: ^4.13.1
+        specifier: ^4.13.2
         version: 4.13.2(@vue/compiler-sfc@3.5.14)(eslint@9.27.0(jiti@2.4.2))(typescript@5.8.3)(vitest@3.1.4(@types/debug@4.1.12)(jiti@2.4.2)(yaml@2.8.0))
       '@vitest/coverage-v8':
         specifier: ^3.1.4
