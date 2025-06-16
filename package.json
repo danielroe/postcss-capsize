@@ -42,7 +42,7 @@
     "test:unit": "vitest"
   },
   "peerDependencies": {
-    "postcss": "^8.5.4"
+    "postcss": "^8.5.5"
   },
   "dependencies": {
     "@capsizecss/core": "^4.1.2"
@@ -51,9 +51,9 @@
     "@antfu/eslint-config": "^4.14.1",
     "@vitest/coverage-v8": "^3.2.3",
     "bumpp": "^10.1.1",
-    "eslint": "^9.28.0",
-    "lint-staged": "^16.1.0",
-    "postcss": "^8.5.4",
+    "eslint": "^9.29.0",
+    "lint-staged": "^16.1.2",
+    "postcss": "^8.5.5",
     "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3",
     "unbuild": "^3.5.0",
