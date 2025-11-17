@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.2.0",
-    "@vitest/coverage-v8": "^4.0.9",
+    "@vitest/coverage-v8": "^4.0.10",
     "bumpp": "^10.3.1",
     "eslint": "^9.39.1",
     "lint-staged": "^16.2.6",
@@ -57,7 +57,7 @@
     "simple-git-hooks": "^2.13.1",
     "typescript": "^5.9.3",
     "unbuild": "^3.6.1",
-    "vitest": "^4.0.9"
+    "vitest": "^4.0.10"
   },
   "lintStaged": {
     "*.{js,ts,json,md,yaml,yml}": [
