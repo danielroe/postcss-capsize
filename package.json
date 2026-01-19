@@ -50,7 +50,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^7.0.1",
     "@vitest/coverage-v8": "^4.0.17",
-    "bumpp": "^10.3.2",
+    "bumpp": "^10.4.0",
     "eslint": "^9.39.2",
     "lint-staged": "^16.2.7",
     "postcss": "^8.5.6",
