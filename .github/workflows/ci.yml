@@ -18,7 +18,7 @@ jobs:
 
       - run: corepack enable
 
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6
         with:
           node-version: lts/-1
           cache: pnpm
@@ -37,7 +37,7 @@ jobs:
 
       - run: corepack enable
 
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6
         with:
           node-version: lts/-1
           cache: pnpm
@@ -52,4 +52,4 @@ jobs:
         run: npm run test -- --coverage
 
       - name: Coverage
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@671740ac38dd9b0130fbe1cec585b89eea48d3de # v5
