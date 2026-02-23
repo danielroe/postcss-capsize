@@ -1,7 +1,7 @@
 {
   "name": "postcss-capsize",
   "version": "0.4.0",
-  "packageManager": "pnpm@10.29.3",
+  "packageManager": "pnpm@10.30.1",
   "description": "PostCSS plugin to inject capsize font metrics",
   "author": {
     "name": "Daniel Roe",
@@ -51,7 +51,7 @@
     "@antfu/eslint-config": "^7.4.3",
     "@vitest/coverage-v8": "^4.0.18",
     "bumpp": "^10.4.1",
-    "eslint": "^10.0.0",
+    "eslint": "^10.0.1",
     "lint-staged": "^16.2.7",
     "postcss": "^8.5.6",
     "simple-git-hooks": "^2.13.1",
