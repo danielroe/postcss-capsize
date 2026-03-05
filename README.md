@@ -2,14 +2,14 @@
 <p align="center">PostCSS plugin to inject Capsize font metrics</p>
 
 <p align="center">
-<a href="https://npmjs.com/package/postcss-capsize">
-    <img alt="" src="https://img.shields.io/npm/v/postcss-capsize/latest.svg?style=flat-square">
+<a href="https://npmx.dev/package/postcss-capsize">
+    <img alt="" src="https://npmx.dev/api/registry/badge/version/postcss-capsize">
 </a>
 <a href="https://bundlephobia.com/result?p=postcss-capsize">
     <img alt="" src="https://img.shields.io/bundlephobia/minzip/postcss-capsize?style=flat-square">
 </a>
-<a href="https://npmjs.com/package/postcss-capsize">
-    <img alt="" src="https://img.shields.io/npm/dt/postcss-capsize.svg?style=flat-square">
+<a href="https://npmx.dev/package/postcss-capsize">
+    <img alt="" src="https://npmx.dev/api/registry/badge/downloads/postcss-capsize">
 </a>
 <a href="https://lgtm.com/projects/g/danielroe/postcss-capsize">
     <img alt="" src="https://img.shields.io/lgtm/alerts/github/danielroe/postcss-capsize?style=flat-square">
