@@ -52,7 +52,7 @@
     "@vitest/coverage-v8": "^4.1.4",
     "bumpp": "^11.0.1",
     "eslint": "^10.2.1",
-    "lint-staged": "^16.4.0",
+    "lint-staged": "^17.0.4",
     "postcss": "^8.5.10",
     "simple-git-hooks": "^2.13.1",
     "typescript": "^6.0.3",
