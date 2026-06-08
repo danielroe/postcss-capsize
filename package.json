@@ -22,19 +22,24 @@
     "metrics"
   ],
   "sideEffects": false,
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "files": [
     "!**/*.map",
-    "dist/**/*",
-    "dist/index.d.ts"
+    "dist/**/*"
   ],
   "scripts": {
-    "build": "unbuild",
-    "lint": "pnpm lint:all:eslint",
-    "lint:all:eslint": "pnpm lint:eslint -- .",
-    "lint:eslint": "eslint --fix",
+    "build": "tsdown",
+    "lint": "pnpm eslint",
+    "prepack": "tsdown",
     "prepare": "simple-git-hooks && pnpm build",
     "prepublishOnly": "pnpm lint && pnpm test",
     "release": "bumpp && npm publish",
@@ -55,13 +60,13 @@
     "lint-staged": "^17.0.7",
     "postcss": "^8.5.15",
     "simple-git-hooks": "^2.13.1",
+    "tsdown": "0.22.0",
     "typescript": "^6.0.3",
-    "unbuild": "^3.6.1",
     "vitest": "^4.1.8"
   },
   "lintStaged": {
     "*.{js,ts,json,md,yaml,yml}": [
-      "yarn lint:eslint"
+      "npx eslint --fix"
     ]
   },
   "simple-git-hooks": {
