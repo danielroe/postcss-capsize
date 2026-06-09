@@ -42,8 +42,8 @@
     "prepack": "tsdown",
     "prepare": "simple-git-hooks && pnpm build",
     "prepublishOnly": "pnpm lint && pnpm test",
-    "release": "bumpp && npm publish",
-    "test": "pnpm test:unit",
+    "test": "pnpm test:types && pnpm test:unit",
+    "test:types": "tsc --noEmit",
     "test:unit": "vitest"
   },
   "peerDependencies": {
@@ -55,7 +55,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "^9.0.0",
     "@vitest/coverage-v8": "^4.1.8",
-    "bumpp": "^11.1.0",
     "eslint": "^10.4.1",
     "lint-staged": "^17.0.7",
     "postcss": "^8.5.15",

@@ -1,3 +1,4 @@
+import type { FontMetrics } from '@capsizecss/core'
 import type Processor from 'postcss/lib/processor'
 import postcss from 'postcss'
 
@@ -18,7 +19,7 @@ describe(`plugin`, () => {
             descent: -200,
             lineGap: 0,
             unitsPerEm: 1000,
-          },
+          } as FontMetrics,
         },
       }),
     ])

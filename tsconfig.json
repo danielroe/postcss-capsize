@@ -2,14 +2,11 @@
   "compilerOptions": {
     "target": "esnext",
     "lib": ["esnext", "dom"],
-    "rootDir": "src",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "strict": true,
-    "declaration": true,
-    "outDir": "lib",
-    "sourceMap": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "noEmit": true
   },
-  "exclude": ["node_modules", "lib", "test"]
+  "exclude": ["dist"]
 }
