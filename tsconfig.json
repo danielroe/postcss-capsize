@@ -5,8 +5,8 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "strict": true,
-    "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": true,
+    "skipLibCheck": true
   },
   "exclude": ["dist"]
 }
