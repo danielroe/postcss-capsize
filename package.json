@@ -74,12 +74,12 @@
     "typescript": "6.0.3",
     "vitest": "5.0.0"
   },
-  "lintStaged": {
-    "*.{js,ts,json,md,yaml,yml}": [
-      "npx eslint --fix"
-    ]
-  },
   "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,json,md,yaml,yml}": [
+      "pnpm eslint --fix"
+    ]
   }
 }
